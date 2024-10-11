@@ -1,0 +1,34 @@
+# Node.js dependencies
+/node_modules
+
+# Environment variables
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+
+# NPM generated files
+package-lock.json
+yarn.lock
+
+# Temporary files
+*.tmp
+*.temp
+
+# Debug files
+debug.log
+
+# Build files
+/dist
