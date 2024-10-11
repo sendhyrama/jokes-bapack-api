@@ -55,10 +55,20 @@ const jokes = [
   "Sayur-sayur apa yang cantik?\n- Lo dehh."
 ];
 
-
-// Example route
 router.get('/', function(req, res, next) {
-  res.json({ message: 'Welcome to the Jokes API!' });
+  res.json({
+    name: "Welcome to the Jokes Bapack API! 🔥",
+    version: "1.0.0",
+    author: {
+      name: "sendhyrama",
+      email: "sendhyrama@gmail.com",
+      socials: "https://sendhyrama.dev/links",
+    },
+    endpoints: {
+      "/jokes": "get all text jokes",
+      "/jokes/random": "get text jokes randomly"
+    }
+  });
 });
 
 /* GET all jokes. */
