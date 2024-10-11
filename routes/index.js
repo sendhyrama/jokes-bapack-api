@@ -65,14 +65,14 @@ router.get('/', function(req, res, next) {
       socials: "https://sendhyrama.dev/links",
     },
     endpoints: {
-      "/jokes": "get all text jokes",
-      "/jokes/random": "get text jokes randomly"
+      "/text": "get all text jokes",
+      "/text/random": "get text jokes randomly"
     }
   });
 });
 
 /* GET all jokes. */
-router.get('/jokes', function(req, res, next) {
+router.get('/text', function(req, res, next) {
   res.json({
     code: 200,
     status: 'success',
@@ -82,7 +82,7 @@ router.get('/jokes', function(req, res, next) {
 });
 
 /* GET a random joke. */
-router.get('/jokes/random', function(req, res, next) {
+router.get('/text/random', function(req, res, next) {
   const randomIndex = Math.floor(Math.random() * jokes.length);
   res.json({
     code: 200,
